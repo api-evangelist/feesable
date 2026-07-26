@@ -1,7 +1,20 @@
 aid: feesable
 name: Feesable
-description: Feesable is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Feesable is a fintech infrastructure company providing embedded finance and
+  debt capital management (treasury) tooling that connects platforms, lenders,
+  and capital markets. Its Embedded Finance product delivers white-labeled loan
+  origination infrastructure — KYC/KYB verification, credit decisioning, dynamic
+  pricing, fraud detection, and servicing/collections — exposed through APIs,
+  SDKs, and embeddable widgets so SaaS platforms, marketplaces, and B2B lenders
+  can launch embedded lending without building fintech from scratch. Its Debt
+  Capital Management (DCM Engine) product provides institutional-grade treasury
+  management — credit facility modeling, covenant monitoring, borrowing-base
+  calculations, and automated lender/regulatory reporting connected to live
+  portfolio data. Feesable targets GCC markets with Shariah-compliant options
+  and is a portfolio company of 500 Global. The developer surface (APIs, SDKs,
+  sandbox keys, documentation) is partner-gated behind a partnership onboarding
+  process rather than publicly self-serve.
 url: https://raw.githubusercontent.com/api-evangelist/feesable/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +22,32 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://feesable.ai/og-image.jpg
 tags:
 - Company
+- Embedded Finance
+- Fintech
+- Lending
+- Loan Origination
+- Debt Capital Management
+- Treasury Management
+- Credit Decisioning
+- KYC
+- Payments Infrastructure
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +57,23 @@ maintainers:
 common:
 - type: Website
   url: https://feesable.ai
+- type: About
+  url: https://feesable.ai/pages/about.html
+- type: Support
+  url: https://feesable.ai/pages/contact.html
+- type: TermsOfService
+  url: https://feesable.ai/pages/terms.html
+- type: PrivacyPolicy
+  url: https://feesable.ai/pages/privacy.html
+- type: TrustCenter
+  url: https://feesable.ai/pages/trust.html
+- type: TrustCenter
+  name: Feesable Trust Center profile
+  url: security/feesable-trust-center.yml
+- type: DomainSecurity
+  url: security/feesable-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

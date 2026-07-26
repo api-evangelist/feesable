@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://feesable.ai/pages/trust.html
+url: https://feesable.ai/pages/trust.html
+# Feesable publishes a Trust Center page describing its self-attested security,
+# privacy, and compliance posture. No named third-party certifications
+# (SOC 2 / ISO 27001 / PCI DSS / HIPAA / FedRAMP) are published, so no
+# `Compliance` pointer is emitted — only the TrustCenter surface is asserted.
+certifications: []
+security:
+  encryption_in_transit: TLS 1.3
+  encryption_at_rest: AES-256
+  access_control: Role-based, least-privilege access with logging across environments
+  audit_logs: End-to-end audit-ready logging for key actions and data access
+  vendor_management: Vendor due-diligence security reviews and contractual safeguards
+privacy:
+  retention_policy: Retention periods reflect legal and operational requirements (see Privacy Policy)
+  right_to_erasure: Deletion requests honored subject to legal obligations
+  regimes:
+  - GDPR
+compliance_program:
+  sanctions_screening: Sanctions and PEP screening at onboarding and continuously
+  pep_screening: Ongoing monitoring with risk-based triggers and reviews
+  regulatory_reporting: Automated regulatory reporting for GCC jurisdictions (central bank, credit bureau, credit rating agencies)
+  shariah: Shariah-compliant options for GCC markets
+contact:
+  channel: Compliance Team (via contact page)
+  first_response: Typically within 1 business day
+  url: https://feesable.ai/pages/contact.html
+evidence:
+- source: https://feesable.ai/pages/trust.html
+  keywords: [trust center, encryption, access control, audit logs, sanctions screening, pep screening]

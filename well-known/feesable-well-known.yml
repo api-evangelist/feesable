@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: probed
+host: https://feesable.ai
+# NOTE: feesable.ai serves a single-page-app catch-all — every unknown path,
+# including every /.well-known/ probe below, returns the 37,584-byte marketing
+# homepage (HTTP 200, content-type text/html), NOT a genuine well-known
+# document. No authentic well-known artifacts are published, so NO WellKnown /
+# SecurityTxt pointer is wired into apis.yml (an SPA 200 is not a real catalog).
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  genuine: false
+  note: SPA catch-all returned homepage HTML, not a security.txt
+- path: /.well-known/openid-configuration
+  status: 200
+  genuine: false
+  note: SPA catch-all returned homepage HTML, not OIDC discovery
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  genuine: false
+  note: SPA catch-all returned homepage HTML, not RFC 8414 metadata
+- path: /.well-known/api-catalog
+  status: 200
+  genuine: false
+  note: SPA catch-all returned homepage HTML, not an API catalog
+- path: /.well-known/ai-plugin.json
+  status: 200
+  genuine: false
+  note: SPA catch-all returned homepage HTML, not an ai-plugin manifest
